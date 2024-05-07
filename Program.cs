@@ -19,7 +19,8 @@ using System.Drawing;
 			Console.ForegroundColor = ConsoleColor.Black;
 
 			Console.WriteLine("Your color is red!");
-		}
+                Console.ReadKey();
+            }
 
 		else if (color == "green")
 		{
@@ -27,7 +28,8 @@ using System.Drawing;
 			Console.ForegroundColor = ConsoleColor.Black;
 
 			Console.WriteLine("Your color is green!");
-		}
+                Console.ReadKey();
+            }
 
         else
 {
@@ -35,7 +37,8 @@ using System.Drawing;
     Console.ForegroundColor = ConsoleColor.Black;
 
     Console.WriteLine("Your color is cyan!");
-}
+                Console.ReadKey();
+            }
         }
         }
 }
