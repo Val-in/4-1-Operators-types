@@ -10,34 +10,42 @@ using System.Drawing;
             public static void Main(string[] args)
         {
             Console.WriteLine("Напишите свой любимый цвет на английском с маленькой буквы");
-		
-		var color = Console.ReadLine();
 
-		if (color == "red")
-		{
-			Console.BackgroundColor = ConsoleColor.Red;
-			Console.ForegroundColor = ConsoleColor.Black;
+            var color = Console.ReadLine();
 
-			Console.WriteLine("Your color is red!");
-                Console.ReadKey();
-            }
+            switch (color)
+            {
+                case "red":
+                    Console.BackgroundColor = ConsoleColor.Red;
+                    Console.ForegroundColor = ConsoleColor.Black;
 
-		else if (color == "green")
-		{
-			Console.BackgroundColor = ConsoleColor.Green;
-			Console.ForegroundColor = ConsoleColor.Black;
+                    Console.WriteLine("Your color is red!");
+                    Console.ReadKey();
+                    break;
 
-			Console.WriteLine("Your color is green!");
-                Console.ReadKey();
-            }
+                case "green":
+                    Console.BackgroundColor = ConsoleColor.Green;
+                    Console.ForegroundColor = ConsoleColor.Black;
 
-        else
-{
-    Console.BackgroundColor = ConsoleColor.Cyan;
-    Console.ForegroundColor = ConsoleColor.Black;
+                    Console.WriteLine("Your color is green!");
+                    Console.ReadKey();
+                    break;
 
-    Console.WriteLine("Your color is cyan!");
-                Console.ReadKey();
+                case "сyan":
+                    Console.BackgroundColor = ConsoleColor.Cyan;
+                    Console.ForegroundColor = ConsoleColor.Black;
+
+                    Console.WriteLine("Your color is cyan!");
+                    Console.ReadKey();
+                    break;
+
+                default:
+                    Console.BackgroundColor = ConsoleColor.Yellow;
+                    Console.ForegroundColor = ConsoleColor.Red;
+
+                    Console.WriteLine("Your color is yellow!");
+                    Console.ReadKey();
+                    break;
             }
         }
         }
