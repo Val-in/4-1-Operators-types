@@ -9,19 +9,18 @@ using System.Drawing;
         {
             public static void Main(string[] args)
         {
-            Console.WriteLine("Цикл while");
-            int k = 0;
-
-            while ( k < 3)
+            Console.WriteLine("Цикл do");
+            int t = 0;
+               do         
             {
-                Console.WriteLine(k);
-
+                Console.WriteLine(t);
                 Console.WriteLine("Напишите свой любимый цвет на английском с маленькой буквы");
-                k++;
-                switch (Console.ReadLine())
+                
+                 switch (Console.ReadLine())
 
+                    
 
-                {            
+                    {            
                     case "red":
                         Console.BackgroundColor = ConsoleColor.Red;
                         Console.ForegroundColor = ConsoleColor.Black;
@@ -48,9 +47,13 @@ using System.Drawing;
 
                         Console.WriteLine("Your color is yellow!");
                         break;
-                }
+                        }
+
+                 t++;
+              } while (t < 3);
+
 
             }
         }
-        }
     }
+    
