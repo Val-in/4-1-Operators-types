@@ -8,6 +8,8 @@ using System.Drawing;
         internal class Program
         {
             public static void Main(string[] args)
+
+
         {
             Console.WriteLine("Цикл do");
             int t = 0;
@@ -50,7 +52,7 @@ using System.Drawing;
                         }
 
                  t++;
-              } while (t < 3);
+              } while (t < 1);
 
 
             }
