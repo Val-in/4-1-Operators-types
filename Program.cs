@@ -16,8 +16,15 @@ using System.Drawing;
             {
                 Console.WriteLine(k);
                 Console.WriteLine("Напишите свой любимый цвет на английском с маленькой буквы");
-                               
-                switch (Console.ReadLine())
+                var text = Console.ReadLine();
+
+                if (text == "stop")
+                {
+                    Console.WriteLine("Цикл остановлен");
+                    break;
+                }
+                
+                switch (text)
 
                     
 
@@ -49,13 +56,6 @@ using System.Drawing;
                         Console.WriteLine("Your color is yellow!");
                         break;
                         }
-                var text = Console.ReadLine();
-
-                if (text == "stop")
-                {
-                    Console.WriteLine("Цикл остановлен");
-                    break;
-                }
                 k++;
             }
             
