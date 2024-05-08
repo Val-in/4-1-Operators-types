@@ -12,22 +12,14 @@ using System.Drawing;
 
         {
                         int k = 0;
-            while (true)
+            for (; k < 5;) 
             {
                 Console.WriteLine(k);
                 Console.WriteLine("Напишите свой любимый цвет на английском с маленькой буквы");
                 var text = Console.ReadLine();
-
-                if (text == "stop")
-                {
-                    Console.WriteLine("Цикл остановлен");
-                    break;
-                }
-                
+                                              
                 switch (text)
-
-                    
-
+                                        
                     {            
                     case "red":
                         Console.BackgroundColor = ConsoleColor.Red;
@@ -50,12 +42,13 @@ using System.Drawing;
                         Console.WriteLine("Your color is cyan!");
                         break;
                     default:
-                        Console.BackgroundColor = ConsoleColor.Yellow;
-                        Console.ForegroundColor = ConsoleColor.Black;
-
-                        Console.WriteLine("Your color is yellow!");
-                        break;
-                        }
+                      continue;
+                }
+                if (text == "stop")
+                {
+                    Console.WriteLine("Цикл остановлен");
+                    break;
+                }
                 k++;
             }
             
